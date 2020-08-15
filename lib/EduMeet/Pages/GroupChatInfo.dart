@@ -21,8 +21,6 @@ class GroupChatInfo extends StatelessWidget {
             child: Column(
               children: [
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget> [
                     CircleAvatar (
                       radius: 50,
@@ -37,12 +35,30 @@ class GroupChatInfo extends StatelessWidget {
 
                 SizedBox(height: 20),
 
-                // Participants
-                Column(
-                  children: [
-                    participant(name: 'AB', admin: true)
-                  ],
+                Container(
+                  padding: EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(17)
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Participants: 5', style: bodyText2.copyWith(color: Color(darkTealish)), textAlign: TextAlign.left),
+                      // Participants
+                      Column(
+                        children: [
+                          participant(name: 'Harsh', admin: true),
+                          participant(name: 'CD', admin: false),
+                          participant(name: 'CD', admin: false),
+                          participant(name: 'Sud', admin: true),
+                          participant(name: 'CD', admin: false),
+                        ],
+                      )
+                    ],
+                  ),
                 )
+
               ],
             ),
           ),
@@ -65,6 +81,7 @@ class participant extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return ListTile(
+      contentPadding: EdgeInsets.only(left: 0, right: 0),
       leading: CircleAvatar(
           radius: 15,
           backgroundImage: NetworkImage(usanet1),
