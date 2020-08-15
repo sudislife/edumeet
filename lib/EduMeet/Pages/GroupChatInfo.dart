@@ -80,32 +80,35 @@ class participant extends StatelessWidget {
   });
 
   Widget build(BuildContext context) {
-    return ListTile(
-      contentPadding: EdgeInsets.only(left: 0, right: 0),
-      leading: CircleAvatar(
-          radius: 15,
-          backgroundImage: NetworkImage(usanet1),
-      ),
+    return InkWell(
+      onTap: () {},
+      child: ListTile(
+        contentPadding: EdgeInsets.only(left: 0, right: 0),
+        leading: CircleAvatar(
+            radius: 15,
+            backgroundImage: NetworkImage(usanet1),
+        ),
 
-      title: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(name, style: bodyText3.copyWith(color: Color(thereIsYetAnotherGrey))),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(name, style: bodyText3.copyWith(color: Color(thereIsYetAnotherGrey))),
 
-          Container(
-            decoration: BoxDecoration(
-              border: Border.all(color: admin == true ? Color(darkTealish): Colors.transparent),
-                borderRadius: BorderRadius.circular(17)
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(4),
-              child: Text("Group Admin", style: bodyText2.copyWith(
-                fontSize: 10,
-                color: admin == true ? Color(darkTealish): Colors.transparent,
-              )),
-            ),
-          )
-        ],
+            Container(
+              decoration: BoxDecoration(
+                border: Border.all(color: admin == true ? Color(darkTealish): Colors.transparent),
+                  borderRadius: BorderRadius.circular(17)
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(4),
+                child: Text("Group Admin", style: bodyText2.copyWith(
+                  fontSize: 10,
+                  color: admin == true ? Color(darkTealish): Colors.transparent,
+                )),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
