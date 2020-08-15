@@ -129,6 +129,11 @@ class _ChatScreenState extends State<ChatScreen> {
       home: Scaffold(
         backgroundColor: Color(0xfff5f5f5),
         appBar: AppBar(
+          leading: InkWell(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: Icon(Icons.arrow_back)),
           flexibleSpace: Container(
             decoration: BoxDecoration(color: Color(teal)),
           ),

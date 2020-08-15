@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:EduMeet/misc/constants.dart';
 import 'package:EduMeet/misc/scaler.dart';
 
+import '../../misc/theme.dart';
+import '../../misc/theme.dart';
+
 class SharePost extends StatelessWidget {
   double paddingSides;
 
@@ -55,7 +58,7 @@ class SharePost extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.only(left: 20),
                           child: Text('Write a caption',
-                              style: bodyText2.copyWith(
+                              style: headline3.copyWith(
                                   color: Color(thereIsYetAnotherGrey))),
                         )
                       ],
@@ -64,17 +67,17 @@ class SharePost extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 14.0),
                     child: Text("Tag People",
-                        style: bodyText2.copyWith(color: Color(blackish))),
+                        style: headline3.copyWith(color: Color(blackish))),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 14.0),
                     child: Text("Add Location",
-                        style: bodyText2.copyWith(color: Color(blackish))),
+                        style: headline3.copyWith(color: Color(blackish))),
                   ),
                 ],
               ),
               Padding(
-                padding: EdgeInsets.only(left: 15, right: 15, bottom: 80),
+                padding: EdgeInsets.only(left: 15, right: 15, bottom: 30),
                 child: Container(
                   height: 44,
                   decoration: BoxDecoration(
