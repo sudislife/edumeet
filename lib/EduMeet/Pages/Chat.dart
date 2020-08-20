@@ -20,6 +20,19 @@ class Chat extends StatelessWidget {
           padding: EdgeInsets.only(left: 20, top: 20, right: 20),
           child: Column(
             children: <Widget>[
+              Container(
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(4))),
+                  child: ListTile(
+                      leading: Icon(Icons.search),
+                      title: TextFormField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Search',
+                        ),
+                      ))),
+              SizedBox(height: 15),
               card(
                   image: unsplashImage4,
                   head: 'MBA  Crash Course Batch',
