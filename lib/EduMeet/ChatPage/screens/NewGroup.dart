@@ -47,15 +47,19 @@ class NewGroup extends StatelessWidget {
 
                 SizedBox(height: 15),
 
-                TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    contentPadding: EdgeInsets.all(10),
-                    fillColor: Colors.white,
-                    border: OutlineInputBorder(),
-                    labelText: 'Write your group name'
-                  )
+                Container(
+                  color: Colors.white,
+                  child: TextField(
+                      obscureText: true,
+                      decoration: InputDecoration(
+                          contentPadding: EdgeInsets.all(10),
+                          border: OutlineInputBorder(),
+                          labelText: 'Write your group name'
+                      )
+                  ),
                 ),
+
+
               ],
             ),
           ]
