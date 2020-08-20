@@ -17,7 +17,7 @@ class Detail extends StatelessWidget {
 
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.only(left: 40, top: 36, right: 40),
+          padding: EdgeInsets.only(left: 20, top: 36, right: 20),
           child: Column(
             children: [
               Column(
@@ -38,7 +38,11 @@ class Detail extends StatelessWidget {
               SizedBox(height: 20),
 
               Container(
-                color: Colors.white,
+
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10)
+                ),
                 child: Padding(
                   padding: EdgeInsets.only(top: 15, bottom: 15),
                   child: Row(
@@ -53,7 +57,7 @@ class Detail extends StatelessWidget {
                       ),
 
                       Container(
-                        height: 15,
+                        height: 25,
                         width: 2,
                         color: Color(lightGrey),
                       ),
@@ -67,7 +71,7 @@ class Detail extends StatelessWidget {
                       ),
 
                       Container(
-                        height: 15,
+                        height: 25,
                         width: 2,
                         color: Color(lightGrey),
                       ),
