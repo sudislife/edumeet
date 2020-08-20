@@ -51,7 +51,7 @@ class Add_in_group extends StatelessWidget {
                       title: TextFormField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Write a comment',
+                          hintText: 'Search',
                         ),
                       ))),
               SizedBox(height: 10),

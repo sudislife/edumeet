@@ -1,3 +1,4 @@
+import 'package:EduMeet/EduMeet/ChatPage/screens/Detail.dart';
 import 'package:EduMeet/misc/constants.dart';
 import 'package:EduMeet/misc/theme.dart';
 import 'package:flutter/material.dart';
@@ -134,7 +135,13 @@ class _ChatScreenState extends State<ChatScreen> {
             decoration: BoxDecoration(color: Color(teal)),
           ),
           centerTitle: true,
-          title: Text('Antone Zone', style: buttonTextStyle),
+          title: InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return Detail();
+                }));
+              },
+              child: Text('Antone Zone', style: buttonTextStyle)),
         ),
         body: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),

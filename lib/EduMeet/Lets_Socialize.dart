@@ -1,3 +1,4 @@
+import 'package:EduMeet/EduMeet/ChatPage/screens/NewGroup.dart';
 import 'package:EduMeet/EduMeet/ChatPage/screens/chat_screen.dart';
 import 'package:EduMeet/EduMeet/Pages/Chat.dart';
 import 'package:EduMeet/EduMeet/Pages/SharePost.dart';
@@ -34,6 +35,19 @@ class _Lets_SocializeState extends State<Lets_Socialize> {
         flexibleSpace: Container(
           decoration: appBarDecoration,
         ),
+        actions: [
+          InkWell(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return NewGroup();
+              }));
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text('New Group', style: TextStyle(fontSize: 15)),
+            ),
+          )
+        ],
       ),
       body: PageView(
         controller: pageController,
