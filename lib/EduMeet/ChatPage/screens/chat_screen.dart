@@ -5,10 +5,6 @@ import 'package:EduMeet/EduMeet/ChatPage/models/message_model.dart';
 import 'package:EduMeet/EduMeet/ChatPage/models/user_model.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../models/message_model.dart';
-import '../models/message_model.dart';
-import '../models/message_model.dart';
-
 class ChatScreen extends StatefulWidget {
   final User user;
 
