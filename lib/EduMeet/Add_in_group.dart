@@ -40,6 +40,7 @@ class Add_in_group extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.only(left: 20, top: 20, right: 20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
                   decoration: BoxDecoration(
@@ -53,7 +54,12 @@ class Add_in_group extends StatelessWidget {
                           hintText: 'Write a comment',
                         ),
                       ))),
-              SizedBox(height: 15),
+              SizedBox(height: 10),
+              Text(
+                'No. of Students (50)',
+                style: TextStyle(color: Colors.grey),
+              ),
+              SizedBox(height: 5),
               card(
                 image: unsplashImage4,
                 head: 'MBA  Crash Course Batch',
@@ -126,11 +132,6 @@ class card extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 15),
       child: InkWell(
-        onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return ChatScreen();
-          }));
-        },
         child: Container(
           decoration: BoxDecoration(
               color: Colors.white,
