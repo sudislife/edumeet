@@ -9,12 +9,6 @@ class Chat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //     centerTitle: true,
-      //     flexibleSpace: Container(
-      //       decoration: appBarDecoration,
-      //     ),
-      //     title: Text('Next', style: headline2.copyWith(color: Colors.white))),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(left: 20, top: 20, right: 20),
@@ -114,11 +108,18 @@ class card extends StatelessWidget {
                   padding: const EdgeInsets.only(right: 19),
                   child: Transform.rotate(
                       angle: -pi * 45 / 180,
-                      child: Icon(
-                        LineAwesomeIcons.paper_plane,
-                        size: 15,
-                        color: Colors.black,
-                      )))
+                      child: InkWell(
+                        onTap: () {
+                          ChatScreen();
+                        },
+                        child: Icon(
+                          LineAwesomeIcons.paper_plane,
+                          size: 15,
+                          color: Colors.black,
+                        ),
+                      )
+                  )
+              )
             ],
           ),
         ),

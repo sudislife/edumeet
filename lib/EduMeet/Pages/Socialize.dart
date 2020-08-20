@@ -23,7 +23,6 @@ class Socialize extends StatelessWidget {
                   child: Card(
                     child: Container(
                       //first Card
-                      height: 120,
                       width: double.infinity,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
@@ -38,7 +37,7 @@ class Socialize extends StatelessWidget {
                               children: <Widget>[
                                 Text('Subject-Wise Analysis ',
                                     style: headline6.copyWith(fontSize: 16)),
-                                Text(' Of previous Year paper',
+                                Text('Of previous Year paper',
                                     style: headline6.copyWith(fontSize: 16)),
                                 Text('UPSE CSE',
                                     style: buttonTextStyle.copyWith(
@@ -53,11 +52,13 @@ class Socialize extends StatelessWidget {
                                     decoration:
                                         BoxDecoration(color: Color(lightGrey))),
                                 Row(children: <Widget>[
-                                  Text("Pre Smart.Score better.Go "),
+                                  Text("Pre Smart. Score better. Go"),
                                   Text("Educrack",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold))
-                                ])
+                                ]),
+
+                                SizedBox(height: 10)
                               ],
                             ),
                           ),
