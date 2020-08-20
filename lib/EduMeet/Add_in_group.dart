@@ -29,7 +29,10 @@ class Add_in_group extends StatelessWidget {
               'Lets Socialize',
               style: buttonTextStyle,
             ),
-            Text('4/50 Selected')
+            Text(
+              '4/50 Selected',
+              style: TextStyle(fontSize: 15),
+            )
           ],
         ),
         flexibleSpace: Container(
@@ -40,6 +43,7 @@ class Add_in_group extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.only(left: 20, top: 20, right: 20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
                   decoration: BoxDecoration(
@@ -50,10 +54,15 @@ class Add_in_group extends StatelessWidget {
                       title: TextFormField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Write a comment',
+                          hintText: 'Search',
                         ),
                       ))),
-              SizedBox(height: 15),
+              SizedBox(height: 10),
+              Text(
+                'No. of Students (50)',
+                style: TextStyle(color: Colors.grey),
+              ),
+              SizedBox(height: 5),
               card(
                 image: unsplashImage4,
                 head: 'MBA  Crash Course Batch',
@@ -92,6 +101,12 @@ class Add_in_group extends StatelessWidget {
               ),
               card(
                 image: unsplashImage4,
+                head: 'Kumar Santosh',
+                subhead: 'Delhi,  UPSC',
+                check: true,
+              ),
+              card(
+                image: unsplashImage4,
                 head: 'Suman Malhotra',
                 subhead: 'Delhi,  UPSC',
                 check: false,
@@ -126,11 +141,6 @@ class card extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 15),
       child: InkWell(
-        onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return ChatScreen();
-          }));
-        },
         child: Container(
           decoration: BoxDecoration(
               color: Colors.white,
@@ -169,7 +179,7 @@ class card extends StatelessWidget {
                   angle: 0,
                   child: check
                       ? Icon(
-                          LineAwesomeIcons.check_circle,
+                          Icons.check_circle,
                           size: 20,
                           color: Color(teal),
                         )
