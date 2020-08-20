@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Color(alsoAlmostWhite),
         fontFamily: GoogleFonts.sourceSansPro().fontFamily,
       ),
-      home: Detail(),
+      home: Lets_Socialize(),
     );
   }
 }

@@ -206,7 +206,8 @@ class card extends StatelessWidget {
                         : Text(
                             'Unfollow',
                             style: TextStyle(color: Color(teal)),
-                          )),
+                          )
+                ),
               ),
             ],
           ),
