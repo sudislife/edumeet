@@ -51,6 +51,7 @@ class NewGroup extends StatelessWidget {
                   obscureText: true,
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(10),
+                    fillColor: Colors.white,
                     border: OutlineInputBorder(),
                     labelText: 'Write your group name'
                   )
