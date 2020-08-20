@@ -1,3 +1,4 @@
+import 'package:EduMeet/EduMeet/ChatPage/screens/Detail.dart';
 import 'package:EduMeet/EduMeet/ChatPage/screens/NewGroup.dart';
 import 'package:EduMeet/EduMeet/Lets_Socialize.dart';
 import 'package:EduMeet/EduMeet/Pages/Chat.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Color(alsoAlmostWhite),
         fontFamily: GoogleFonts.sourceSansPro().fontFamily,
       ),
-      home: NewGroup(),
+      home: Detail(),
     );
   }
 }
